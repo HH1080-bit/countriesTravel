@@ -1,0 +1,140 @@
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.form .input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 6px 8px 6px rgba(0,0,0,0.34);
+
+}
+
+.form .input .search {
+    color: white;
+    width: 20rem;
+    border-radius: 0px 5px 5px 0;
+    outline: none;
+    padding: 15px 0 !important;
+    border: none;
+    background-color: hsl(209, 23%, 22%);
+    font-weight: lighter;
+}
+
+.form .input .ai {
+    padding: 10px;
+} 
+
+.form .input .ai.light {
+    color: black;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.form .input .search {
+    color: white;
+    width: 20rem;
+    border-radius: 0px 5px 5px 0;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    background-color: hsl(209, 23%, 22%);
+    font-weight: lighter;
+}
+
+.form .input .search::placeholder{
+color: white;
+}
+
+.form .input .search.light{
+    background-color: hsl(0, 0%, 98%);
+    color: black;
+}
+.form .input .search.light::placeholder{
+    color: black;
+    }
+
+
+.form .filterCont {
+    position: relative;
+
+}
+
+.form .filterCont .filter {
+    box-shadow: 1px 6px 8px 6px rgba(0,0,0,0.34);
+    background-color: hsl(209, 23%, 22%);
+    padding: 15px 40px;
+    font-weight: lighter;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.form .filterCont .filter.light {
+    color: black;
+    background-color: hsl(0, 0%, 98%);
+   
+}
+.form .filterCont .filter > * {
+    position: relative;
+    top: 3px;
+}
+
+
+.form .filterCont .conteinents {
+    position: absolute;
+    padding: 0;
+    left: 0px;
+    top: 30px;
+    background-color: hsl(209, 23%, 22%);
+    box-shadow: 1px 6px 8px 6px rgba(0,0,0,0.34);
+    list-style: none;
+    width: 13rem;
+}
+
+.form .filterCont .conteinents li {
+    color: white;
+    padding: 5px 40px;
+    cursor: pointer;
+}
+.form .filterCont .conteinents li.light {
+    color: black;
+    background-color: white;
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+.form .filterCont .conteinents li:hover {
+    background-color:rgba(0,0,0,0.34) ;
+}
+
+.form .filterCont .conteinents li.light:hover {
+    background-color:hsl(0, 0%, 95%) ;
+}
+
+@media (max-width:767.99px){
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .form .input .ai {
+        padding: 10px;
+    } 
+    .form .input .search {
+        color: white;
+        width: 25rem;
+    }
+    .form .filterCont {
+        top: 25px;
+
+    }
+
+
+}
+  
